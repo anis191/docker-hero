@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import BlogSection from '../components/Home/BlogSection';
 
 export default function Home() {
   return (
@@ -85,7 +86,7 @@ export default function Home() {
       </header>
 
       {/* Get Started Section */}
-      <section id="get-started" className="px-6 pb-20">
+      <section id="get-started" className="px-6 pb-16">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl font-semibold text-center text-slate-900">Get started in 3 steps</h2>
 
@@ -113,6 +114,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Docker Blog Section */}
+      <BlogSection />
     </main>
   );
 }

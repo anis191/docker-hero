@@ -6,6 +6,7 @@ import BasicDockerCommands from '../pages/Commands';
 import DocumentationLinks from '../pages/Documentation';
 import About from '../pages/About';
 import DockerTutorial from '../pages/DockerTutorial';
+import Article from '../pages/Article';
 
 const AppRoutes = () => {
     return (
@@ -16,6 +17,7 @@ const AppRoutes = () => {
                 <Route path="documentation" element={<DocumentationLinks />}/>
                 <Route path="about" element={<About />}/> 
                 <Route path="tutorial" element={<DockerTutorial />}/>
+                <Route path="article" element={<Article />}/>
             </Route>
         </Routes>
     );

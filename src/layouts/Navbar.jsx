@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router';
-import { FaDocker, FaBookOpen, FaInfoCircle, FaTerminal } from 'react-icons/fa';
+import { FaDocker, FaBookOpen, FaInfoCircle, FaTerminal, FaBlog } from 'react-icons/fa';
 import { HiHome } from 'react-icons/hi';
 import { MdSchool } from 'react-icons/md';
 
@@ -12,6 +12,7 @@ export default function Navbar() {
     { name: 'Home', path: '/', icon: <HiHome className="text-cyan-500" /> },
     { name: 'Commands', path: '/commands', icon: <FaTerminal className="text-cyan-500" /> },
     { name: 'Tutorial', path: '/tutorial', icon: <MdSchool className="text-cyan-500" /> },
+    { name: 'Tech Blog', path: '/article', icon: <FaBlog className="text-cyan-500" /> }, 
     { name: 'Documentation', path: '/documentation', icon: <FaBookOpen className="text-cyan-500" /> },
     { name: 'About', path: '/about', icon: <FaInfoCircle className="text-cyan-500" /> },
   ];

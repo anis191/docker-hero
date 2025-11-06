@@ -1,6 +1,12 @@
 # DockerHero
 
-DockerHero is an simple interactive React application that I built while learning Docker. The project helped me understand Docker concepts, commands, and workflows in a practical way. It is designed to learn Docker step by step and includes a Docker tutorial, basic commands, documentation references, and a language toggle (English and Bangla). The project is fully responsive with a modern UI and tracks progress for each tutorial step.
+DockerHero is a simple interactive React application that I built while learning Docker. The project helped me understand Docker concepts, commands, and workflows in a practical way. It is designed to teach Docker step by step and includes a Docker tutorial, basic commands, documentation references, and a language toggle (English and Bangla). The project is fully responsive with a modern UI and tracks progress for each tutorial step.
+
+---
+
+## Live Demo
+
+Check out the live version here: [DockerHero Live](https://docker-hero.vercel.app/)
 
 ---
 
@@ -21,49 +27,59 @@ DockerHero is an simple interactive React application that I built while learnin
 * **Tailwind CSS** (for modern styling without configuration)
 * **React Icons** (for professional and relevant icons)
 * **Vite** (for fast project setup and development)
+* **Docker** (for containerization and deployment)
 
 ---
 
-## Project Structure
+## Getting Started (Local Development)
 
-```
-DockerHero/
-├─ public/
-│  └─ docker.svg       # Docker favicon
-├─ src/
-│  ├─ components/      # React components like Navbar, MainContent, etc.
-│  ├─ getLocalizedSteps.js  # Tutorial steps in English and Bangla
-│  ├─ main.jsx         # Entry point
-│  └─ App.jsx          # Main App component
-├─ index.html          # HTML entry file with Docker favicon
-├─ package.json
-└─ README.md
-```
-
----
-
-## Getting Started
-
-1. Clone the repository:
+If you want to run the project locally (without Docker):
 
 ```bash
-git clone https://github.com/your-username/DockerHero.git
-cd DockerHero
-```
-
-2. Install dependencies:
-
-```bash
+git clone https://github.com/anis191/docker-hero.git
+cd docker-hero
 npm install
-```
-
-3. Run the development server:
-
-```bash
 npm run dev
 ```
 
-4. Open your browser at [http://localhost:5173](http://localhost:5173)
+Then open your browser at [http://localhost:5173](http://localhost:5173)
+
+---
+
+## Run with Docker (No Setup Needed)
+
+You can directly pull and run the pre-built Docker image from Docker Hub.
+No need to clone or build the project manually!
+>⚠️ **Note:** You must have Docker installed and running on your system before executing the following commands.
+
+### Pull the image
+
+```bash
+docker pull anisulalam/dockerhero:02
+```
+
+### Run the container
+
+```bash
+docker run -d -p 5173:5173 anisulalam/dockerhero:02
+```
+
+### Open in browser
+
+Visit [http://localhost:5173](http://localhost:5173)
+
+That’s it! 🎉 Your DockerHero app is now running inside a Docker container.
+
+---
+
+## Available Docker Images
+
+| Repository            | Tag | Image ID     | Size   |
+| --------------------- | --- | ------------ | ------ |
+| anisulalam/dockerhero | 02  | d854381bd610 | 1.94GB |
+| anisulalam/dockerhero | 01  | de323af744e8 | 1.94GB |
+
+You can find them here: 👉 [DockerHub – anisulalam/dockerhero](https://hub.docker.com/r/anisulalam/dockerhero/tags)
 
 ---
 
@@ -78,8 +94,9 @@ npm run dev
 
 ## Author
 
-**Anisul Alam** – [GitHub](https://github.com/anis191) | [LinkedIn](https://www.linkedin.com/in/anisul-alam-a330042a9/)
+**Anisul Alam**
+[GitHub](https://github.com/anis191) | [LinkedIn](https://www.linkedin.com/in/anisul-alam-a330042a9/)
 
 ---
 
-**DockerHero** – Learn Docker, step by step, in a fun and interactive way!
+**DockerHero** – *Learn Docker, step by step, in a fun and interactive way!*
