@@ -79,7 +79,7 @@ That’s it! 🎉 Your DockerHero app is now running inside a Docker container.
 | anisulalam/dockerhero | 02  | d854381bd610 | 1.94GB |
 | anisulalam/dockerhero | 01  | de323af744e8 | 1.94GB |
 
-You can find them here: 👉 [DockerHub – anisulalam/dockerhero](https://hub.docker.com/r/anisulalam/dockerhero/tags)
+You can find them here: 👉 [DockerHub – anisulalam/dockerhero](https://hub.docker.com/r/anisulalam/dockerhero)
 
 ---
 
